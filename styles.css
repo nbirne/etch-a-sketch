@@ -1,5 +1,27 @@
+body {
+    font-family: verdana, serif;
+    text-align: center;
+    background-color: #212529;
+    color: #DEE2E6;
+}
+
 .box {
     float: left;
-    border: 1px solid gray;
+    border: none;
     box-sizing: border-box;
+}
+
+#container {
+    overflow: auto;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #DEE2E6;
+}
+
+button {
+    background-color: #DEE2E6;
+    border: none;
+    color: #212529;
+    margin: 10px 3px;
 }

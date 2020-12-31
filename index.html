@@ -8,7 +8,19 @@
     <body>
         <h1>Etch-a-Sketch</h1>
 
-        <button type="reset">Clear</button>
+        <div id="color-choices">
+            <div id="default-colors">
+                <button class="colorButton" type="button">Dark</button>
+                <button class="colorButton" type="button">Rainbow</button>
+                <button class="colorButton" type="button">Erase</button>
+            </div>
+            <div id="custom-color">
+                <label for="customColor">Custom:</label>
+                <input id="customColor" type="color" value="#2366c4">
+            </div>
+        </div>
+
+        <button id="clear" type="reset">Clear</button>
 
         <div id="container"></div>
 
