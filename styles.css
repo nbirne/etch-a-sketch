@@ -1,27 +1,73 @@
 body {
     font-family: verdana, serif;
     text-align: center;
-    background-color: #212529;
-    color: #DEE2E6;
+    background-color: #fcfffd;
+    color: #5D737E;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 12px;
+    margin-bottom: 0px;
 }
 
 .box {
     float: left;
-    border: none;
+    border: 1px solid #EBFFF6;
     box-sizing: border-box;
 }
 
 #container {
     overflow: auto;
-    border: 1px solid gray;
+    border: 1px solid #5D737E;
     margin: auto;
-    margin-top: 20px;
-    background-color: #DEE2E6;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    background-color: #C0FDFB;
 }
 
 button {
-    background-color: #DEE2E6;
-    border: none;
-    color: #212529;
+    color: #5D737E;
     margin: 10px 3px;
+    padding: 7px 9px;
+}
+
+button, #customColor {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:focus, #customColor:focus {
+    outline: 0;
+}
+
+.colorSelector {
+    border: 1px solid #C0FDFB;
+    background-color: #C0FDFB;
+}
+
+.colorSelector:hover {
+    box-shadow: 0px 0px 7px 0px rgba(100, 182, 172, 0.925);
+}
+
+#darkButton {
+    border: 1px solid #5D737E;
+}
+
+#clear:hover {
+    box-shadow: 0px 0px 7px 0px rgba(251,177,177,0.85);
+}
+
+#clear {
+    background-color: #FCC0C0;
+    border: 1px solid #FCC0C0;
+}
+
+#slider {
+    cursor: pointer;
+    height: 11px;
 }

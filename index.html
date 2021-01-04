@@ -10,19 +10,24 @@
 
         <div id="color-choices">
             <div id="default-colors">
-                <button class="colorButton" type="button">Dark</button>
-                <button class="colorButton" type="button">Rainbow</button>
-                <button class="colorButton" type="button">Erase</button>
+                <button id="darkButton" class="colorButton colorSelector" type="button">Dark</button>
+                <button class="colorButton colorSelector" type="button">Rainbow</button>
+                <button class="colorButton colorSelector" type="button">Erase</button>
             </div>
             <div id="custom-color">
-                <label for="customColor">Custom:</label>
-                <input id="customColor" type="color" value="#2366c4">
+                <label for="customColor">Custom Color:</label>
+                <input id="customColor" class="colorSelector" type="color" value="#92DAD4">
             </div>
         </div>
-
-        <button id="clear" type="reset">Clear</button>
+        <p>(click the Etch-a-Sketch to toggle paintbrush off/on)</p>
 
         <div id="container"></div>
+
+        <button id="clear" type="reset">Clear All</button>
+        <div id="slider-container">
+            <label for="slider">Resolution (will clear sketch):</label>
+            <input id="slider" type="range" min="2" max="50" value="20">
+        </div>
 
         <script src="script.js"></script>
     </body>
