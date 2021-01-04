@@ -1,7 +1,7 @@
 // Container will be this many pixels on each side
 const CONTAINERSIZE = 500;
 let color = "#5D737E";
-let colorOn = true;
+let colorOn = false;
 
 function createGrid() {
     let slider = document.querySelector("#slider");
@@ -27,10 +27,8 @@ function createGrid() {
 }
 
 function toggleColor() {
-    let container = document.querySelector("#container");
-    container.addEventListener("click", function() {
-        colorOn ? (colorOn = false) : (colorOn = true);
-    });
+    document.addEventListener("mousedown", function() {colorOn = true});
+    document.addEventListener("mouseup", function() {colorOn = false});
 }
 
 function colorBox() {
@@ -55,8 +53,6 @@ function clear() {
         // Remove current grid
         let boxes = document.querySelectorAll(".box");
         boxes.forEach(box => box.style.backgroundColor = containerColor);
-
-        colorOn = true;
     });
 }
 
@@ -109,8 +105,6 @@ function changeSize() {
         // Create new grid
         createGrid();
         colorBox();
-
-        colorOn = true;
     });
 }
 
